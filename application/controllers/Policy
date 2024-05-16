@@ -1,0 +1,16 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Policy extends CI_Controller {
+
+
+	public function index()
+	{ 	$data['active'] = "Use Policy";
+        
+		$this->load->view('default/partials/header',$data);
+        $this->load->view('default/partials/topmenu');
+		$this->load->view('default/files/policy.php');
+  
+		$this->load->view('default/partials/footer');
+	}
+}
